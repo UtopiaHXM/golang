@@ -356,8 +356,11 @@ $ sudo -i
 # cd /usr/share/applications
 # gedit sublime.desktop
 ```
+```
 Exec=/usr/bin/subl %F
+```
 修改为：
+```
 Exec= bash -c 'LD_PRELOAD=/usr/lib/libsublime-imfix.so /usr/bin/subl' %F
-
+```
 保存，重新用快捷方式打开sublime
