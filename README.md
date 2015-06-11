@@ -105,24 +105,6 @@ Preferances >> Settings-User
 ```
 
 
-## git配置别名
-```
-$ git config --global alias.st status
-$ git config --global alias.co checkout
-$ git config --global alias.ci commit
-$ git config --global alias.br branch
-```
-甚至还有人丧心病狂地把lg配置成了:
-```
-$ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-```
-配置Git的时候，加上--global是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。
-
-每个仓库的Git配置文件都放在.git/config文件中
-而当前用户的Git配置文件放在用户主目录下的一个隐藏文件.gitconfig中
-别名就在[alias]后面，要删除别名，直接把对应的行删掉即可
-
-
 ## Sublime 安装
 下载地址：
 <http://www.sublimetext.com/2> 官网下载 Sublime Text 2.0.2.tar.bz2
