@@ -346,3 +346,12 @@ Exec=/usr/bin/subl %F
 Exec= bash -c 'LD_PRELOAD=/usr/lib/libsublime-imfix.so /usr/bin/subl' %F
 ```
 保存，重新用快捷方式打开sublime
+
+### 第四步：解决终端打开subl不能输入中文法的问题
+
+以上步骤完成，通过快捷方式打开可以输入中文了，但是终端打开则还是不能输入
+
+设置软链，保证终端启动前导入环境变量
+```
+$ alias subl='export LD_PRELOAD=/usr/lib/libsublime-imfix.so; /usr/bin/subl'
+```
