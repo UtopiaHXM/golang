@@ -227,6 +227,8 @@ StartupNotify=true
 $ apt-cache search fcitx
 $ sudo apt-get install fcitx-pinyin
 ```
+搜狗输入法就是fcitx框架，也可以直接下载linux版本的输入法
+
 系统设置 >> 语言支持 >> 键盘输入方式系统
 IBus 换成 fcitx
 重启系统
