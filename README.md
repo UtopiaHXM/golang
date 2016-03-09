@@ -357,3 +357,15 @@ Exec= bash -c 'LD_PRELOAD=/usr/lib/libsublime-imfix.so /usr/bin/subl' %F
 ```
 $ alias subl='export LD_PRELOAD=/usr/lib/libsublime-imfix.so; /usr/bin/subl'
 ```
+
+让　alias 永久生效
+```
+$ vim .bashrc
+```
+添加
+```
+alias subl='export LD_PRELOAD=/usr/lib/libsublime-imfix.so; /usr/bin/subl &>/dev/null'
+```
+```
+$ source .bashrc
+```
